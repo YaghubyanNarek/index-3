@@ -76,147 +76,161 @@
 	});
 
 	// Clientes slider
-	$('.clients-slider').owlCarousel({
-		items: 1,
-		loop: true,
-		margin: 0,
-		nav: true,
-		autoplay: true,
-		autoplayHoverPause: true,
-		dots: false,
-		navText: [
-			"<i class='las la-long-arrow-alt-left'></i>",
-			"<i class='las la-long-arrow-alt-right'></i>"
-		]
-	})
+    
+    $('.owl-carousel').owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    
+    nav: true,
+    navText: [
+      '<i class="fa icons fa-arrow-left"></i>',
+      '<i class="fa icons fa-arrow-right"></i>'
+    ],
+    responsive: {
+      0:{
+        items:1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      1200: {
+        items: 4
+      }
+    }
+  })
 
 	// Partner Slider
-	$('.partner-slider').owlCarousel({
-		loop: true,
-		dots: false,
-		margin: 40,
-		nav: false,
-		autoplay: true,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 2
-			},
-			576: {
-				items: 3
-			},
-			768: {
-				items: 4
-			},
-			1200: {
-				items: 5
-			}
-		}
-	})
-
-	// shop slider JS
-	$('.shop-slider').owlCarousel({
-		items: 4,
-		loop: true,
-		margin: 38,
-		nav: true,
-		autoplay: true,
-		autoplayHoverPause: true,
-		dots: false,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 2
-			},
-			768: {
-				items: 3
-			},
-			768: {
-				items: 3
-			},
-			1200: {
-				items: 4
-			}
-		}
-	})
-	// Testimonials slider JS
-	$('.testimonials-slider').owlCarousel({
-		items: 4,
-		loop: true,
-		margin: 38,
-		nav: true,
-		autoplay: true,
-		autoplayHoverPause: true,
-		dots: false,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 2
-			},
-			768: {
-				items: 3
-			},
-			1200: {
-				items: 4
-			}
-		},
-		navText: [
-			"<i class='las la-long-arrow-alt-left'></i>",
-			"<i class='las la-long-arrow-alt-right'></i>"
-		]
-	})
-
-	// Clientes slider Two
-	$('.clients-slider-two').owlCarousel({
-		loop: true,
-		margin: 20,
-		nav: false,
-		// autoplay: true,
-		// autoplayHoverPause: true,
-		dots: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 1
-			},
-			768: {
-				items: 1
-			},
-			1200: {
-				items: 2
-			}
-		}
-	})
-
-	// Screens slider
-	$('.screens-slider').owlCarousel({
-		loop: true,
-		margin: 10,
-		nav: false,
-		autoplay: true,
-		autoplayHoverPause: true,
-		dots: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 2
-			},
-			768: {
-				items: 3
-			},
-			1200: {
-				items: 5
-			}
-		}
-	})
+//	$('.partner-slider').owlCarousel({
+//		loop: true,
+//		dots: false,
+//		margin: 40,
+//		nav: false,
+//		autoplay: true,
+//		autoplayHoverPause: true,
+//		responsive: {
+//			0: {
+//				items: 2
+//			},
+//			576: {
+//				items: 3
+//			},
+//			768: {
+//				items: 4
+//			},
+//			1200: {
+//				items: 5
+//			}
+//		}
+//	})
+//
+//	// shop slider JS
+//	$('.shop-slider').owlCarousel({
+//		items: 4,
+//		loop: true,
+//		margin: 38,
+//		nav: true,
+//		autoplay: true,
+//		autoplayHoverPause: true,
+//		dots: false,
+//		responsive: {
+//			0: {
+//				items: 1
+//			},
+//			576: {
+//				items: 2
+//			},
+//			768: {
+//				items: 3
+//			},
+//			768: {
+//				items: 3
+//			},
+//			1200: {
+//				items: 4
+//			}
+//		}
+//	})
+//	// Testimonials slider JS
+//	$('.testimonials-slider').owlCarousel({
+//		items: 4,
+//		loop: true,
+//		margin: 38,
+//		nav: true,
+//		autoplay: true,
+//		autoplayHoverPause: true,
+//		dots: false,
+//		responsive: {
+//			0: {
+//				items: 1
+//			},
+//			576: {
+//				items: 2
+//			},
+//			768: {
+//				items: 3
+//			},
+//			1200: {
+//				items: 4
+//			}
+//		},
+//		navText: [
+//			"<i class='las la-long-arrow-alt-left'></i>",
+//			"<i class='las la-long-arrow-alt-right'></i>"
+//		]
+//	})
+//
+//	// Clientes slider Two
+//	$('.clients-slider-two').owlCarousel({
+//		loop: true,
+//		margin: 20,
+//		nav: false,
+//		// autoplay: true,
+//		// autoplayHoverPause: true,
+//		dots: true,
+//		responsive: {
+//			0: {
+//				items: 1
+//			},
+//			576: {
+//				items: 1
+//			},
+//			768: {
+//				items: 1
+//			},
+//			1200: {
+//				items: 2
+//			}
+//		}
+//	})
+//
+//	// Screens slider
+//	$('.screens-slider').owlCarousel({
+//		loop: true,
+//		margin: 10,
+//		nav: false,
+//		autoplay: true,
+//		autoplayHoverPause: true,
+//		dots: true,
+//		responsive: {
+//			0: {
+//				items: 1
+//			},
+//			576: {
+//				items: 2
+//			},
+//			768: {
+//				items: 3
+//			},
+//			1200: {
+//				items: 5
+//			}
+//		}
+//	})
 
 	// Odometer JS
 	$('.odometer').appear(function (e) {

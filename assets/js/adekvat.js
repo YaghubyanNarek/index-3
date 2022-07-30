@@ -2,19 +2,25 @@ const navbar = document.querySelector('.navbar-nav');
 const navbarToggler = document.querySelector('.navbar-toggler');
 const ripple = document.querySelector('.popup-youtube')
 let mfp;
+
+const whitePlay = document.querySelector('.whitePlay');
+const forVideoWrapper = document.querySelector('.forVideo-wrapper');
+const video = document.querySelector('.videobar');
+const closeVideo = document.querySelector('.closeVideo')
+whitePlay.addEventListener('click' , function () {
+    forVideoWrapper.classList.add('fvw');
+    video.play()
+})
+
+closeVideo.addEventListener('click' , function () {
+    forVideoWrapper.classList.remove('fvw');
+    video.currentTime = '0';
+    video.pause()
+})
+
+
 navbarToggler.addEventListener('click', () => {
     navbar.classList.toggle('fActive')
-})
-console.log(ripple)
-ripple.addEventListener('click', () => {
-    setTimeout(() => {
-        mfp = document.querySelector('.mfp-iframe')
-        console.log(mfp);
-    }, 10);
-    setTimeout(() => {
-        mfp.src = './images/vid.mp4'
-
-    }, 80);
 })
 
 const faq = document.querySelector('#faq');
@@ -60,3 +66,6 @@ faq.onmouseleave = (e) => {
 //         }
 //     }
 // }
+
+
+

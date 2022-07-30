@@ -2,7 +2,9 @@
     .logo .btn-primary {
         margin-top: 38px;
     }
-
+    .logo4{
+        right: 2px;
+    }
     .logo {
         position: absolute !important;
         right: 50% !important;
@@ -10,7 +12,15 @@
         /* width: 100%; */
 
     }
-
+    .br1{
+        display: block;
+    }
+    .section-title {
+        text-align: left;
+    }
+    .logo1{
+        right: 15px;
+    }
     .main-navbar {
         background-color: #ff8e50;
         width: 100%;
@@ -66,7 +76,16 @@
         width: 100%;
     }
 }
-
+@media screen and (max-width:1200px) {
+    .br2{
+        display: block ;
+    }
+}
+@media screen and (max-width:1140px){
+    .br3{
+        display:  block;
+    }
+}
 @media screen and (max-width:990px) {
     .ht-100 {
         overflow: unset !important;
@@ -137,7 +156,14 @@
         pointer-events: none;
     }
 }
-
+@media screen  and (max-width:860px){
+    .logo1, .logo2,.logo3,.logo3,.logo4{
+        display: none;
+    }
+    .br1{
+        display: none !important;
+    }
+}
 @media screen and (max-width: 768px) {
     .faq-area {
         padding: 224px 14px !important;

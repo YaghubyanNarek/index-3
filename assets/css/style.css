@@ -140,14 +140,21 @@ p:last-child {
   margin-bottom: 15px;
   line-height: 1;
 }
-
+.br1{
+  display: none;
+}
+.br2{
+  display: none;
+}
+.br3{
+  display: none;
+}
 .section-title h2 {
   text-transform: uppercase;
   font-size: 60px;
   font-weight: 700;
   /* line-height: 70px;
 	letter-spacing: 0em; */
-  text-align: center;
 }
 
 .section-title p {
@@ -184,9 +191,113 @@ p:last-child {
   margin-top: 50px;
 }
 
+.logo1 {
+  top: 70px;
+  position: absolute;
+  right: 53px;
+  z-index: 1001;
+  text-align: center;
+}
+
+.logo1 p {
+  font-size: 20px;
+  top: 30px;
+  position: relative;
+}
+
+.logo1 span {
+  font-size: 36px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.logo1 .btn-primary {
+  padding: 20px 67px;
+  margin-top: 50px;
+}
+
+.logo2 {
+  top: 70px;
+  position: absolute;
+  right: 53px;
+  z-index: 1001;
+  text-align: center;
+}
+
+.logo2 p {
+  font-size: 20px;
+  top: 30px;
+  position: relative;
+}
+
+.logo2 span {
+  font-size: 36px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.logo2 .btn-primary {
+  padding: 20px 67px;
+  margin-top: 50px;
+}
+
+.logo3 {
+  top: 70px;
+  position: absolute;
+  right: 53px;
+  z-index: 1001;
+  text-align: center;
+}
+
+.logo3 p {
+  font-size: 20px;
+  top: 30px;
+  position: relative;
+}
+
+.logo3 span {
+  font-size: 36px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.logo4 .btn-primary {
+  padding: 20px 67px;
+  margin-top: 50px;
+}
+
+.logo4 {
+  top: 70px;
+  position: absolute;
+  right: 53px;
+  z-index: 1001;
+  text-align: center;
+}
+
+.logo4 p {
+  font-size: 20px;
+  top: 30px;
+  position: relative;
+}
+
+.logo4 span {
+  font-size: 36px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.logo4 .btn-primary {
+  padding: 20px 67px;
+  margin-top: 50px;
+}
 .btn-primary:hover {
   background-color: #bf4300;
   border-color: none;
+}
+
+.icons{
+    font-size: 40px !important;
+    cursor: pointer;
 }
 
 /*================================================
@@ -205,7 +316,7 @@ Faq
 #thing {
   overflow: hidden !important;
   width: 100% !important;
-  height: 1000px !important;
+  height: 100% !important;
   /* clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 16% 31%, 85% 28%, 57% 69%, 21% 74%, 25% 100%, 100% 100%, 100% 0%); */
 
 }
@@ -213,6 +324,74 @@ Faq
 .faq-area h2 {
   font-size: 45px;
   padding-bottom: 70px
+}
+
+.whitePlay{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 110px;
+    height: 110px;
+    background: #EAEBF1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mainWhite{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    animation: mainWhite 1s linear infinite;
+}
+
+.playIcon{
+    font-size: 42px !important;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+@keyframes mainWhite {
+    to{
+        transform: scale(1.35)
+    }
+}
+
+.forVideo-wrapper{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+/*    display: flex;*/
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000000000;
+}
+
+.closeVideo {
+    float: right;
+    color: white;
+    font-size: 22px !important;
+    cursor: pointer;
+}
+
+.fvw{
+    display: flex !important;
+}
+
+.forVideo{
+    width: 40%;
+}
+
+.forVideo video{
+    width: 100%;
+    height: 100%;
 }
 
 .accordion .accordion-item {}
@@ -2381,7 +2560,8 @@ Start CSS
   position: relative;
   top: -56px !important;
   left: 0;
-  right: 0
+  right: 0;
+  height: 100vh;
 }
 .element{
   
