@@ -2559,6 +2559,11 @@ Start CSS
 	transition: background-image 1.5s linear;
 
 } */
+
+.fade:not(.show) {
+    opacity: 1 !important;
+}
+
 #home {
   overflow: hidden !important;
   position: relative;
