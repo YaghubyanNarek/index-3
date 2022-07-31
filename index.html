@@ -453,11 +453,11 @@
             let elements = document.createElement('div')
             elements.setAttribute('class', 'element')
             document.querySelector('#home').appendChild(elements)
-            elements.style.left = e.clientX - (window.innerWidth / 100) * 45
+            elements.style.left = 0;
             elements.style.top = e.clientY - 225 + 'px'
             setTimeout(() => {
                 elements.remove()
-            }, 35);
+            },50);
         }
         document.querySelector('#home').onmouseover = animateBg
     </script>
