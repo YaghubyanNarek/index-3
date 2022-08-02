@@ -140,15 +140,23 @@ p:last-child {
   margin-bottom: 15px;
   line-height: 1;
 }
-.br1{
+
+.collapse:not(.show) {
+  display: block;
+}
+
+.br1 {
   display: none;
 }
-.br2{
+
+.br2 {
   display: none;
 }
-.br3{
+
+.br3 {
   display: none;
 }
+
 .section-title h2 {
   text-transform: uppercase;
   font-size: 60px;
@@ -168,9 +176,9 @@ p:last-child {
 
 .logo {
   top: 70px;
-  position: absolute;
+  position: fixed;
   right: 53px;
-  z-index: 1001;
+  z-index: 1;
   text-align: center;
 }
 
@@ -274,10 +282,6 @@ p:last-child {
   text-align: center;
 }
 
-.collapse:not(.show) {
-    display: block !important;
-}
-
 .logo4 p {
   font-size: 20px;
   top: 30px;
@@ -294,14 +298,15 @@ p:last-child {
   padding: 20px 67px;
   margin-top: 50px;
 }
+
 .btn-primary:hover {
   background-color: #bf4300;
   border-color: none;
 }
 
-.icons{
-    font-size: 40px !important;
-    cursor: pointer;
+.icons {
+  font-size: 40px !important;
+  cursor: pointer;
 }
 
 /*================================================
@@ -330,72 +335,73 @@ Faq
   padding-bottom: 70px
 }
 
-.whitePlay{
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 110px;
-    height: 110px;
-    background: #EAEBF1;
-    border-radius: 50%;
-    cursor: pointer;
+.whitePlay {
+  z-index: 100;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  background: #EAEBF1;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.mainWhite{
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.4);
-    border-radius: 50%;
-    animation: mainWhite 1s linear infinite;
+.mainWhite {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: mainWhite 1s linear infinite;
 }
 
-.playIcon{
-    font-size: 42px !important;
-    position: absolute;
-    left:50%;
-    top: 50%;
-    transform: translate(-50%,-50%)
+.playIcon {
+  font-size: 42px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
 }
 
 @keyframes mainWhite {
-    to{
-        transform: scale(1.35)
-    }
+  to {
+    transform: scale(1.35)
+  }
 }
 
-.forVideo-wrapper{
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: none;
-/*    display: flex;*/
-    justify-content: center;
-    align-items: center;
-    z-index: 100000000000000;
+.forVideo-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  /*    display: flex;*/
+  justify-content: center;
+  align-items: center;
+  z-index: 100000000000000;
 }
 
 .closeVideo {
-    float: right;
-    color: white;
-    font-size: 22px !important;
-    cursor: pointer;
+  float: right;
+  color: white;
+  font-size: 22px !important;
+  cursor: pointer;
 }
 
-.fvw{
-    display: flex !important;
+.fvw {
+  display: flex !important;
 }
 
-.forVideo{
-    width: 40%;
+.forVideo {
+  width: 40%;
 }
 
-.forVideo video{
-    width: 100%;
-    height: 100%;
+.forVideo video {
+  width: 100%;
+  height: 100%;
 }
 
 .accordion .accordion-item {}
@@ -2204,6 +2210,7 @@ SEO Marketing CSS
   position: absolute;
   width: 540px;
   text-align: left;
+  z-index: 100;
   bottom: 0;
   right: 53px;
 }
@@ -2390,6 +2397,7 @@ SEO Marketing CSS
   text-align: center;
   bottom: 58px;
   right: 53px;
+  z-index: 100;
 }
 
 .our-clients-title h3 {
@@ -2545,7 +2553,7 @@ Start CSS
 
 /* Startup banner Area */
 .startup-banner-area {
-/*  min-height: 1000px;*/
+  min-height: 1000px;
   background-image: url("../../images/moto-fon.png");
   background-size: cover;
   background-position: center center;
@@ -2559,22 +2567,47 @@ Start CSS
 	transition: background-image 1.5s linear;
 
 } */
-
-.fade:not(.show) {
-    opacity: 1 !important;
-}
-
 #home {
   overflow: hidden !important;
   position: relative;
-  top: -56px !important;
+  top: -60px !important;
   left: 0;
   right: 0;
   height: 100vh;
 }
-.element{
-  clip-path: polygon(0% 41.25%, 2% 25.25%, 4% 20.25%, 6% 17.25%, 9% 16.25%, 28% 12.25%, 30% 11.25%, 31% 10.25%, 34% 4.25%, 35% 2.25%, 36% 0.25%, 57% 0.25%, 57% 2.25%, 65% 2.25%, 67% 4.25%, 69% 12.25%, 70% 13.25%, 71% 14.25%, 93% 15.25%, 94% 16.25%, 96% 21.25%, 97% 23.25%, 97% 26.25%, 98% 28.25%, 100% 42.25%, 98% 42.25%, 98% 45.25%, 98% 48.25%, 99% 48.25%, 100% 48.25%, 98% 67.25%, 97% 73.25%, 95% 76.25%, 94% 78.25%, 73.68% 95.35%, 69.34% 97.3%, 65% 99.25%, 61% 99.25%, 58% 99.25%, 57% 99.25%, 39% 99.25%, 25% 93.25%, 15% 83.25%, 6% 75.25%, 4% 73.25%, 3% 70.25%, 3% 67.25%, 1% 54.25%, 0.5% 51.5%, 0% 49.25%, 2% 49.25%, 2% 46.25%, 2% 43.25%, 0% 43.25%, 0% 43%);
-  position: fixed;
+.withvisor {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 30vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100000000000000000000;
+    font-size: 22px;
+    font-weight: 700;
+    color: #DC7200;
+}
+.novisor {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 30vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  font-size: 22px;
+  font-weight: 700;
+  color: #DC7200;
+}
+.zInd-1{
+  z-index: -1;
+}
+.owl-dots{
+  display: none !important;
+}
+.element {
+  clip-path: polygon(0% 41.25%, 2% 25.25%, 4% 20.25%, 6% 17.25%, 9% 16.25%, 28% 12.25%, 30% 11.25%, 31% 10.25%, 34% 4.25%, 35% 2.25%, 36% 2.25%, 57% 2.25%, 65% 2.25%, 67% 7.25%, 69% 12.25%, 70% 13.25%, 71% 14.25%, 93% 15.25%, 94% 16.25%, 96% 21.25%, 97% 23.25%, 97.5% 25.75%, 98% 28.25%, 100% 42.25%, 98% 42.25%, 98% 45.25%, 98% 48.25%, 99% 48.25%, 100% 48.25%, 98.14% 69.52%, 97% 73.25%, 95.5% 75.75%, 94% 78.25%, 73.68% 95.35%, 69.34% 97.3%, 65% 99.25%, 61% 99.25%, 58% 99.25%, 57% 99.25%, 39% 99.25%, 25% 93.25%, 11.93% 85.14%, 7.97% 79.19%, 5.23% 72.69%, 2.5% 66.19%, 1% 59.13%, 0% 51.5%, 0% 49.25%, 2% 49.25%, 2% 46.25%, 2% 43.25%, 0% 43.25%, 0% 43%);
+    position: fixed;
   width: 100%;
   height: 400px;
   background-size: cover;
@@ -2582,6 +2615,7 @@ Start CSS
   background-image: url(../../images/moto-fon.png);
   border-radius: 100%;
 }
+
 .woter1 {
   width: 50% !important;
   z-index: 1000;
@@ -2603,23 +2637,28 @@ Start CSS
   left: 0;
   top: 0;
 }
-#services{
+
+#services {
   top: -60px;
   position: relative;
 
 }
-#video{
+
+#video {
   position: relative;
   top: -60px;
 }
-#shop{
-  position: relative;  
+
+#shop {
+  position: relative;
   top: -60px;
 }
-#testimonials{
+
+#testimonials {
   position: relative;
-  top:-60px
+  top: -60px
 }
+
 #scratch {
   overflow: hidden !important;
   position: relative !important;
@@ -2634,7 +2673,7 @@ Start CSS
 
 #scratch>img {
   object-fit: cover;
-  display:  block !important;
+  display: block !important;
 }
 
 .fActive {

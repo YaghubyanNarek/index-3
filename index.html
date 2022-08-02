@@ -101,20 +101,10 @@
 
         <!-- Our Services Area -->
         <div id="services" class="our-services-area ">
-            <div class="logo1">
-                <a href="/" class="bg-main">
-                    <img src="images/logo.png" alt="logo" />
-                </a>
-                <p>
-                    Антизапотевающая накладка<br />
-                    <span><a href="tel:84955653115">+7 (495) 565 31 15</a></span><br />
-                    <a class="phone" href="mailto:info@wowvizor.ru">info@wowvizor.ru</a>
-                </p>
-                <button type="submit" class="btn-primary">Купить</button>
-            </div>
+            
             <div class="our-services-bg"></div>
             <div class="section-title">
-                <h2>Более 140 видов <br class="br2"> накладок</h2>
+                <h2>Более 140 видов  накладок</h2>
             </div>
             <div class="container">
                 <div class="note">
@@ -151,17 +141,7 @@
 
         <!-- Popup Video Area -->
         <div id="video" class="popup-video-area ">
-            <div class="logo2">
-                <a href="/" class="bg-main">
-                    <img src="images/logo.png" alt="logo" />
-                </a>
-                <p>
-                    Антизапотевающая накладка<br />
-                    <span><a href="tel:84955653115">+7 (495) 565 31 15</a></span><br />
-                    <a class="phone" href="mailto:info@wowvizor.ru">info@wowvizor.ru</a>
-                </p>
-                <button type="submit" class="btn-primary">Купить</button>
-            </div>
+           
             <div class="whitePlay">
                 <div class="mainWhite">
                 </div>
@@ -287,17 +267,7 @@
         </div>
         <!-- Testimonials Area -->
         <div id="testimonials" class="testimonials-area ">
-            <div class="logo3">
-                <a href="/" class="bg-main">
-                    <img src="images/logo.png" alt="logo" />
-                </a>
-                <p>
-                    Антизапотевающая накладка<br />
-                    <span><a href="tel:84955653115">+7 (495) 565 31 15</a></span><br />
-                    <a class="phone" href="mailto:info@wowvizor.ru">info@wowvizor.ru</a>
-                </p>
-                <button type="submit" class="btn-primary">Купить</button>
-            </div>
+           
             <div class="testimonials-area-bg"></div>
             <div class="our-clients-title">
                 <h3>отзывы наших клиентов</h3>
@@ -333,18 +303,8 @@
 
     <!-- Faq Area -->
     <div id="faq" class="faq-area ">
-        <div class="logo4">
-            <a href="/" class="bg-main">
-                <img src="images/logo.png" alt="logo" />
-            </a>
-            <p>
-                Антизапотевающая накладка<br />
-                <span><a href="tel:84955653115">+7 (495) 565 31 15</a></span><br />
-                <a class="phone" href="mailto:info@wowvizor.ru">info@wowvizor.ru</a>
-            </p>
-            <button type="submit" class="btn-primary">Купить</button>
-        </div>
-        <h2>Более 140 видов <br class="br1"> антизапотевающих <br class="br3"> накладок</h2>
+       
+        <h2>Более 140 видов  антизапотевающих  накладок</h2>
         <div class="col-md-9">
             <div class="row">
                 <div class="accordion">
@@ -423,6 +383,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
     <!-- Production version -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
@@ -453,13 +414,17 @@
             let elements = document.createElement('div')
             elements.setAttribute('class', 'element')
             document.querySelector('#home').appendChild(elements)
-            elements.style.left = 0;
-            elements.style.top = e.clientY - 225 + 'px'
+            elements.style.left = `0%`
+            elements.style.top = e.clientY - 200 + 'px'
             setTimeout(() => {
                 elements.remove()
-            },80);
+            }, 35);
+            console.log(1);
         }
-        document.querySelector('#home').onmouseover = animateBg
+        if(window.innerWidth>1000){
+            document.querySelector('#home').onmouseover = animateBg
+            document.querySelector('#thing').onmouseover = animateBg
+        }
     </script>
     <!-- <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

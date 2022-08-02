@@ -12,6 +12,18 @@ whitePlay.addEventListener('click' , function () {
     video.play()
 })
 
+window.onscroll=()=>{
+
+    if(window.scrollY+100>document.querySelector('#faq').offsetTop){
+        document.querySelector('.logo').classList.add('zInd-1')
+    }
+    else{
+        document.querySelector('.logo').classList.remove('zInd-1')
+        
+
+    }
+    
+}
 closeVideo.addEventListener('click' , function () {
     forVideoWrapper.classList.remove('fvw');
     video.currentTime = '0';

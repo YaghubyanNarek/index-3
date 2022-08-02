@@ -6,11 +6,10 @@
         right: 2px;
     }
     .logo {
-        position: absolute !important;
+        /* position: absolute !important; */
         right: 50% !important;
         transform: translateX(50%);
         /* width: 100%; */
-
     }
     .br1{
         display: block;
@@ -18,9 +17,7 @@
     .section-title {
         text-align: left;
     }
-    .logo1{
-        right: 15px;
-    }
+    
     .main-navbar {
         background-color: #ff8e50;
         width: 100%;
@@ -90,7 +87,7 @@
     .ht-100 {
         overflow: unset !important;
     }
-
+    
     .note .visor svg {
         width: 450px !important;
     }
@@ -122,6 +119,8 @@
     }
     .logo {
         width: 100%;
+        z-index: 1010;
+        position: absolute !important;
     }
     .our-service-contant {
         width: 100%;
@@ -157,11 +156,11 @@
     }
 }
 @media screen  and (max-width:860px){
-    .logo1, .logo2,.logo3,.logo3,.logo4{
-        display: none;
+    .novisor {
+        right: 10vw;
     }
-    .br1{
-        display: none !important;
+    .withvisor {
+        left: 10vw;
     }
 }
 @media screen and (max-width: 768px) {
@@ -292,6 +291,9 @@
     }
     .testimonials-area {
         height: 555px;
+    }
+    .withvisor, .novisor {
+        font-size: 18px;
     }
     .defis {
         padding-left: 30px !important;
