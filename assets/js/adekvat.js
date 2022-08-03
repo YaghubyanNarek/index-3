@@ -15,10 +15,12 @@ whitePlay.addEventListener('click' , function () {
 window.onscroll=()=>{
 
     if(window.scrollY+100>document.querySelector('#faq').offsetTop){
-        document.querySelector('.logo').classList.add('zInd-1')
+        document.querySelector('.logo').classList.add('zInd-1');
+        document.querySelector('.main-navbar').classList.add('zInd-1')
     }
     else{
         document.querySelector('.logo').classList.remove('zInd-1')
+        document.querySelector('.main-navbar').classList.remove('zInd-1')
         
 
     }
