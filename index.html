@@ -305,7 +305,7 @@
     <div id="faq" class="faq-area ">
        
         <h2>Более 140 видов  антизапотевающих  накладок</h2>
-        <div class="col-md-9">
+        <div style='max-width: 75%'>
             <div class="row">
                 <div class="accordion">
                     <div class="accordion-item">
@@ -417,8 +417,8 @@
             elements.style.left = `0%`
             elements.style.top = e.clientY - 200 + 'px'
             setTimeout(() => {
-                elements.remove()
-            }, 95);
+                 elements.remove() 
+            }, 90);
             console.log(1);
         }
         if(window.innerWidth>1000){

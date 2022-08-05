@@ -178,7 +178,7 @@ p:last-child {
   top: 70px;
   position: fixed;
   right: 53px;
-  z-index: 1;
+  z-index: 1000;
   text-align: center;
 }
 
@@ -309,6 +309,11 @@ p:last-child {
   cursor: pointer;
 }
 
+.our-clients li {
+    border-radius: 15px;
+    box-shadow: 0 3px 2px #e6841b, 0 6px 2.6px #e6841b
+}
+
 /*================================================
 Faq
 =================================================*/
@@ -318,7 +323,11 @@ Faq
   background-image: url("../../images/moto-31.png");
   background-size: cover;
   background-position: center center;
-  padding: 224px 58px;
+  padding: 0 58px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
   /* z-index:-50 !important; */
 }
 
@@ -436,11 +445,12 @@ Faq
 }
 
 .accordion button .accordion-title {
-  padding: 47px 40px 40px;
+  padding: 28px;
   background: #FFFFFF;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
   display: block;
-  line-height: 32.81px
+  line-height: 32.81px;
+    padding-right: 40px;
 }
 
 .accordion button .icon {
@@ -500,7 +510,8 @@ Faq
 .accordion .accordion-content p {
   font-size: 24px;
   font-weight: 400;
-  padding: 41px 40px
+  padding: 20px;
+    
 }
 
 /*================================================
@@ -521,7 +532,8 @@ Saas Landing CSS
   background-color: #dc7200;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-    z-index: 1;
+  border-radius: 0 10px 10px 0;
+    font-weight: 700;
 }
 
 .main-navbar.menu-shrink {
@@ -1236,7 +1248,7 @@ Saas Landing CSS
   background-repeat: no-repeat;
   padding: 54px;
   position: relative;
-  height: 1400px;
+  height: 100vh;
 }
 
 .popup-video-area.bg-1 {
@@ -2186,7 +2198,7 @@ SEO Marketing CSS
 .our-services-area .note {
   display: block;
   position: absolute;
-  top: 45%;
+  top: 38%;
 }
 
 .our-services-area .visor,
@@ -2213,7 +2225,7 @@ SEO Marketing CSS
   text-align: left;
   z-index: 100;
   bottom: 0;
-  right: 53px;
+  left: 53px;
 }
 
 .our-service-contant h3 {
@@ -2583,7 +2595,7 @@ Start CSS
     left: 30vw;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100000000000000000000;
+    z-index: 1;
     font-size: 22px;
     font-weight: 700;
     color: #DC7200;
@@ -3232,7 +3244,7 @@ Start CSS
 
 .testimonials-area {
   padding: 54px;
-  height: 1400px;
+  height: 100vh;
   position: relative;
 }
 
