@@ -78,7 +78,7 @@
 	// Clientes slider
     
     $('.owl-carousel').owlCarousel({
-    items: 4,
+    items: 3,
     loop: true,
     margin: 38,
     autoplay: true,
@@ -99,7 +99,7 @@
         items: 3
       },
       1200: {
-        items: 4
+        items: 3
       }
     }
   })

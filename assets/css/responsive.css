@@ -2,22 +2,32 @@
     .logo .btn-primary {
         margin-top: 38px;
     }
-    .logo4{
+    .maxW{
+        max-width: 100%;
+      }
+    .owl-carousel {
+        width: 100%;
+    }
+
+    .logo4 {
         right: 2px;
     }
+
     .logo {
         /* position: absolute !important; */
         right: 50% !important;
         transform: translateX(50%);
         /* width: 100%; */
     }
-    .br1{
+
+    .br1 {
         display: block;
     }
+
     .section-title {
         text-align: left;
     }
-    
+
     .main-navbar {
         width: 100%;
         top: 0;
@@ -73,21 +83,24 @@
         width: 100%;
     }
 }
+
 @media screen and (max-width:1200px) {
-    .br2{
-        display: block ;
+    .br2 {
+        display: block;
     }
 }
-@media screen and (max-width:1140px){
-    .br3{
-        display:  block;
+
+@media screen and (max-width:1140px) {
+    .br3 {
+        display: block;
     }
 }
+
 @media screen and (max-width:990px) {
     .ht-100 {
         overflow: unset !important;
     }
-    
+
     .note .visor svg {
         width: 450px !important;
     }
@@ -103,7 +116,7 @@
     #thing {
         display: none !important;
     }
-    
+
     .our-clients-contant {
         bottom: -10px;
         z-index: 1;
@@ -117,11 +130,13 @@
         margin-top: 340px;
         padding: 0 !important;
     }
+
     .logo {
         width: 100%;
         z-index: 1010;
         position: absolute !important;
     }
+
     .our-service-contant {
         width: 100%;
         bottom: -34%;
@@ -155,19 +170,27 @@
         pointer-events: none;
     }
 }
-@media screen  and (max-width:860px){
+
+@media screen and (max-width:860px) {
     .novisor {
         right: 10vw;
     }
+
     .withvisor {
         left: 10vw;
     }
 }
+
 @media screen and (max-width: 768px) {
     .faq-area {
         padding: 224px 14px !important;
     }
-
+    .faq-area {
+        height: inherit;
+    }
+    .shop-area {
+        padding: 2px 54px 50px 54px;
+    }
     .accordion-item {
         width: 100% !important;
     }
@@ -199,7 +222,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    
+
 
     .our-service-contant ul {
         padding: 20px 0 21px 117px;
@@ -223,7 +246,7 @@
 
     .defis li {
         font-size: 18px !important;
-        
+
     }
 
     .accordion-content {
@@ -280,7 +303,8 @@
     .video-btn .ppYt {
         margin: 55px 0 0 -50px;
     }
-    .testimonials-area{
+
+    .testimonials-area {
         height: 670px;
     }
 }
@@ -289,12 +313,18 @@
     .video-btn a {
         margin: -150px 0 0 -50px;
     }
+    .logo .btn-primary {
+        margin-top: 240px;
+    }
     .testimonials-area {
         height: 555px;
     }
-    .withvisor, .novisor {
+
+    .withvisor,
+    .novisor {
         font-size: 18px;
     }
+
     .defis {
         padding-left: 30px !important;
     }
@@ -339,9 +369,11 @@
         margin-top: 339px;
         height: 415px;
     }
+
     .testimonials-area {
         height: 480px;
     }
+
     .video-btn a {
         margin: -109px 0 0 -50px;
     }

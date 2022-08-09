@@ -4,12 +4,20 @@ const ripple = document.querySelector('.popup-youtube')
 let mfp;
 
 const whitePlay = document.querySelector('.whitePlay');
+const whitePlay2 = document.querySelector('.whitePlay2');
 const forVideoWrapper = document.querySelector('.forVideo-wrapper');
+const forVideoWrapper2 = document.querySelector('#wraper2');
 const video = document.querySelector('.videobar');
+const video2 = document.querySelector('.videobar2');
 const closeVideo = document.querySelector('.closeVideo')
+const closeVideo2 = document.querySelector('.closeVideo2')
 whitePlay.addEventListener('click' , function () {
     forVideoWrapper.classList.add('fvw');
     video.play()
+})
+whitePlay2.addEventListener('click' , function () {
+    forVideoWrapper2.classList.add('fvw');
+    video2.play()
 })
 
 //window.onscroll=()=>{
@@ -28,6 +36,11 @@ closeVideo.addEventListener('click' , function () {
     forVideoWrapper.classList.remove('fvw');
     video.currentTime = '0';
     video.pause()
+})
+closeVideo2.addEventListener('click' , function () {
+    forVideoWrapper2.classList.remove('fvw');
+    video2.currentTime = '0';
+    video2.pause()
 })
 
 
