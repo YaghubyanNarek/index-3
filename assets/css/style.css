@@ -2243,13 +2243,13 @@ SEO Marketing CSS
   /*use padding to move list item from left to right*/
   padding-left: 1em;
   background: #dc7200;
-  padding: 20px 0 40px 100px;
+  padding: 10px 0 12px 100px;
   font-size: 26px;
   margin: 0
 }
 
 .our-service-contant ul li {
-  line-height: 2.4;
+  line-height: 2;
 }
 
 .our-service-contant ul li:before {
@@ -2600,7 +2600,7 @@ Start CSS
     z-index: 1;
     font-size: 22px;
     font-weight: 700;
-    color: #DC7200;
+    color: black;
 }
 .novisor {
   margin: 0;
@@ -3233,6 +3233,7 @@ Start CSS
   background-color: #dc7200;
   border: 0;
   padding: 15px 49px;
+    border-radius: 13px;
 }
 
 .more {
